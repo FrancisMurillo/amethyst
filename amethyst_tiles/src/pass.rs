@@ -393,7 +393,7 @@ fn build_tiles_pipeline<B: Backend>(
                 }])
                 .with_depth_test(pso::DepthTest {
                     fun: pso::Comparison::Greater,
-                    write: false,
+                    write: true,
                 }),
         )
         .build(factory, None);
